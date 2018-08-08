@@ -1,0 +1,31 @@
+version: '3'
+
+# Description:  This Compose file created for demo purpose only. Purpose of this compose file is to show how UI runs on container.
+# Maintain BY: Vaibhav Gupta (Devops & Cloud Infrastrure Professional)
+# Date: 8th Aug 2018
+# Version: 1.0.0
+# Services Running:
+#        1. form 1
+#        2. form 2
+# Assumptions/Prerequisites:
+#        1. Docker compose Setup
+#
+# Change History:
+# 8thAugust2018 VaibhavGupta  Initial Version 1.0.0 released for demo
+#
+
+services:
+
+    # launch 1st Form on container
+    form1:
+      #build: form1/
+      image: vaibhav2016/form1:v1.0.0
+      ports:
+        - "81:80"
+
+    # launch 2nd Form on container, either build or get already build image from Docker hub
+    form2:
+      build: form2/
+      #image: vaibhav2016/form2:v1.0.0
+      ports:
+        - "82:80"
