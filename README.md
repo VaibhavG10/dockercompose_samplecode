@@ -6,7 +6,7 @@ This is docker compose code for training purpose
 
 ## How to use:
 
-Step 1: Download code \n
+Step 1: Download code
 
 Step 2: To create docker images & Container
  run "docker-compose up --build -d"
